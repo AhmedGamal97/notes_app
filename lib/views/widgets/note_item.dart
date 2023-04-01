@@ -24,7 +24,9 @@ class NoteItem extends StatelessWidget {
                 builder: (
               context,
             ) =>
-                    const EditNoteView()));
+                    EditNoteView(
+                      note: note,
+                    )));
       },
       child: Container(
         padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
